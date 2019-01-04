@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import WelcomeMessage from "./WelcomeMessage";
+import AppLayout from "./AppLayout";
 
 class App extends Component {
   render() {
-    return <WelcomeMessage />;
+    return (
+      <AppLayout>
+        <WelcomeMessage />
+      </AppLayout>
+    );
   }
 }
 
