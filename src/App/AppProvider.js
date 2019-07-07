@@ -21,7 +21,7 @@ export class AppProvider extends Component {
 
   fetchCoins = async () => {
     let { Data: coinList } = await cc.coinList();
-    console.log(coinList);
+    this.setState({ coinList });
   };
 
   confirmFavorites = () => {
